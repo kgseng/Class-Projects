@@ -1,0 +1,75 @@
+<!-- Images made with help from W3 Schools: https://www.w3schools.com/html/html_images.asp
+     Overflow from W3 Schools: https://www.w3schools.com/cssref/pr_pos_overflow.asp
+
+-->
+
+<!DOCTYPE html>
+<html>
+<div id = "general">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src = "slides.js"></script>
+    <div id = "header">
+        <b><a href="home.html">HOME</a></b>
+        <b><a href="class.html">CLASS</a></b>
+        <b><a href="community.html">COMMUNITY</a></b>
+        <b><a href="gameplay.html">GAME PLAY</a></b>
+        <b><a href="http://maplestory.nexon.net/>">MAPLESTORY</a></b>
+    </div>
+</head>
+<body>
+    <br>
+    <div id = "home_scroll">
+        <p>Start your story today!</p>
+        <img src = "download.jpg">
+    </div>
+    <br>
+<!--Adapted from W3 Schools on how to make a slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="maple1.jpg" style="width:100%">
+            <div class="numbertext">1 / 4</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="maple2.jpg" style="width:100%">
+            <div class="numbertext">2 / 4</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="maple3.jpg" style="width:100%">
+            <div class="numbertext">3 / 4</div>
+        </div>
+        <div class="mySlides fade">
+            <img src="maple4.jpg" style="width:100%">
+            <div class="numbertext"> 4/ 4</div>
+        </div>
+    <!-- next/previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!--Dots-->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <br>
+    <script>
+        showSlides(slideIndex);
+    </script>
+    <div id="style">
+        <img style='height: 100%; width:100%; object-fit:contain'  src = "adele.gif">
+    </div>
+    <div id = "style">
+        <a href="adele.gif" download="adele">DOWNLOAD</a>
+    </div>
+    <br>
+    <div id = "style">
+        <p>All copyrights, images and videos used on this website belong to Nexon. </p>
+        <p>They are found from either maplestory.nexon.net, the official Maplestory YouTube channel, or from the actual Maplestory game.</p>
+    </div>
+</body>
+</html>
